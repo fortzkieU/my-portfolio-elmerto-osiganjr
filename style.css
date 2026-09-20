@@ -1,12 +1,3 @@
-/* ==========================================================================
-   COLOR PALETTE (UNIFIED & CONSISTENT)
-   - Primary BG: #12181f (Dark Slate)
-   - Card BG: #1a232a
-   - Accent Color: #00d2ff (Cyan)
-   - Text Main: #ffffff
-   - Text Muted: #a0aec0
-   ========================================================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -54,17 +45,15 @@ body {
     border-radius: 2px;
 }
 
-/* ==========================================================================
-   BUTTON STYLES (UNIFIED FONT & SIZE)
-   ========================================================================== */
+
 .btn-primary, 
 .btn-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.75rem 1.5rem;   
-    font-size: 0.95rem;        
-    font-weight: 600;          
+    font-size: 0.95rem;             
+    font-weight: normal;      
     border-radius: 8px;        
     text-decoration: none;
     transition: all 0.3s ease;
@@ -97,9 +86,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   NAVBAR
-   ========================================================================== */
+
 .navbar {
     background-color: #12181f;
     position: sticky;
@@ -107,7 +94,6 @@ body {
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-/* Custom size para sa Contact Me button sa Navigation Bar lamang */
 .navbar .nav-btn {
     padding: 0.45rem 1rem !important;
     font-size: 0.88rem !important;
@@ -172,14 +158,19 @@ body {
     width: 100%;
 }
 
-/* ==========================================================================
-   HERO SECTION & PROFILE IMAGE
-   ========================================================================== */
+
 .hero {
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     padding: 4rem 0;
+}
+.job-title {
+    font-size: 1.5rem;
+    color: #00d2ff; /* Kumuha ng accent color gaya ng neon blue */
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 15px;
 }
 
 .hero-container {
@@ -214,6 +205,7 @@ body {
 .hero-btns {
     display: flex;
     gap: 1rem;
+   
 }
 
 .hero-image-wrapper {
@@ -233,7 +225,6 @@ body {
     display: block;
     object-fit: cover;
 
-    /* Radial mask */
     -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 35%, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 80%);
     mask-image: radial-gradient(ellipse 75% 65% at 50% 35%, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 80%);
 
@@ -243,9 +234,7 @@ body {
 
 
 
-/* ==========================================================================
-   ABOUT SECTION
-   ========================================================================== */
+
 .about-card {
     background-color: #1a232a;
     padding: 2rem;
@@ -258,9 +247,7 @@ body {
     font-size: 1.05rem;
 }
 
-/* ==========================================================================
-   SKILLS SECTION
-   ========================================================================== */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -275,7 +262,7 @@ body {
 }
 
 .skills-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.1.9rem;
     margin-bottom: 1.2rem;
     color: #00d2ff;
     display: flex;
@@ -309,20 +296,19 @@ body {
     align-items: stretch;
 }
 
-/* Responsive Support para sa Mobile at Tablet */
 @media (max-width: 1024px) {
     .cert-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns sa tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 640px) {
     .cert-grid {
-        grid-template-columns: 1fr; /* 1 column sa mobile */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Certificate Card Style */
+
 .cert-card {
     background-color: #1a232a;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -339,7 +325,6 @@ body {
     box-shadow: 0 8px 25px rgba(0, 210, 255, 0.15);
 }
 
-/* Media Box (Image & Overlay) */
 .cert-media {
     position: relative;
     height: 180px;
@@ -358,7 +343,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Hover Overlay Icon */
 .cert-overlay {
     position: absolute;
     inset: 0;
@@ -376,7 +360,6 @@ body {
     opacity: 1;
 }
 
-/* PDF Box Placeholder */
 .cert-pdf-box a {
     display: flex;
     flex-direction: column;
@@ -404,7 +387,6 @@ body {
     color: #e0e0e0;
 }
 
-/* Certificate Info Details */
 .cert-info {
     padding: 1.25rem;
     display: flex;
@@ -528,9 +510,7 @@ body {
     display: none;
 }
 
-/* ==========================================================================
-   CONTACT SECTION & FOOTER
-   ========================================================================== */
+
 .contact-card {
     background-color: #1a232a;
     padding: 3rem 2rem;
@@ -570,9 +550,7 @@ footer span {
     color: #4b5563;
 }
 
-/* ==========================================================================
-   HOVER TRANSITIONS & ELEVATION
-   ========================================================================== */
+
 .about-card, .skills-card, .project-card, .contact-card {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -583,21 +561,52 @@ footer span {
     box-shadow: 0 10px 25px rgba(0, 210, 255, 0.12);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    /* Navbar adjustment */
+    .nav-container {
+        height: auto;
+        padding: 1rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    /* Hero section adjustment */
+    .hero {
+        padding: 2rem 0;
+        min-height: auto;
+    }
+
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 2.5rem;
+        gap: 2rem;
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .job-title {
+        font-size: 1.2rem;
     }
 
     .hero-content p {
+        font-size: 0.95rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -606,16 +615,31 @@ footer span {
         justify-content: center;
     }
 
+    /* Profile Image Responsiveness */
     .hero-image-wrapper {
-        width: 260px;
+        width: 100%;
+        max-width: 240px;
+        margin-top: 0;
+    }
+
+    .profile-img-fade {
+        max-width: 100%;
+    }
+
+    /* Section Headings & Cards */
+    .section-title {
+        font-size: 1.6rem;
     }
 
     .project-card {
         grid-template-columns: 1fr;
+        padding: 1.2rem;
     }
 
-    .nav-links {
-        gap: 1rem;
+    .exp-header, .edu-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 }
 
@@ -640,9 +664,7 @@ footer span {
     display: none;
 }
 
-/* ==========================================================================
-   GLIGHTBOX CUSTOM NAVIGATION BUTTONS (HIGH VISIBILITY)
-   ========================================================================== */
+
 .glightbox-container .gnext, 
 .glightbox-container .gprev {
     background-color: #00d2ff !important; 
@@ -681,14 +703,13 @@ footer span {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Animation at lighting effect kapag na-hover */
+
 .experience-card:hover {
     transform: translateY(-5px); 
     border-color: rgba(0, 210, 255, 0.4); 
     box-shadow: 0 8px 30px rgba(0, 210, 255, 0.15); 
 }
 
-/* Flexbox para magkatabi ang Job Title at Date sa desktop */
 .exp-header {
     display: flex;
     justify-content: space-between;
@@ -709,7 +730,6 @@ footer span {
     font-size: 0.95rem;
 }
 
-/* Pill badge para sa Petsa */
 .exp-date {
     color: #00d2ff;
     background-color: rgba(0, 210, 255, 0.1);
@@ -720,7 +740,6 @@ footer span {
     font-weight: 600;
 }
 
-/* Bullet list styling */
 .exp-list {
     padding-left: 1.2rem;
     color: #cbd5e1;
@@ -731,7 +750,6 @@ footer span {
     line-height: 1.6;
 }
 
-/* Modal Background Overlay */
 .screenshot-modal {
     display: none;
     position: fixed;
@@ -756,7 +774,6 @@ footer span {
     backdrop-filter: blur(5px);
 }
 
-/* Modal Content Container */
 .modal-content {
     position: relative;
     z-index: 10;
@@ -786,7 +803,6 @@ footer span {
     margin-bottom: 1.5rem;
 }
 
-/* 4-Column Screenshot Grid */
 .screenshot-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -815,7 +831,6 @@ footer span {
     margin: 0;
 }
 
-/* Responsive Grid */
 @media (max-width: 1024px) {
     .screenshot-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -827,7 +842,6 @@ footer span {
     cursor: pointer;
 }
 
-/* Screenshot Item Hover Effect & Overlay */
 .screenshot-item a {
     position: relative;
     display: block;
@@ -859,7 +873,6 @@ footer span {
     transform: scale(1.05);
 }
 
-/* Project Image Wrapper & Hover Overlay */
 .project-img-link {
     position: relative;
     display: block;
@@ -893,9 +906,8 @@ footer span {
     display: none !important;
 }
 
-/* I-style ang GLightbox Close Button para maging mas malinaw */
 .glightbox-container .gclose {
-    background-color: #0d1117 !important; /* Dark background */
+    background-color: #0d1117 !important; 
     border-radius: 8px !important;
     opacity: 1 !important;
     padding: 8px !important;
@@ -903,7 +915,7 @@ footer span {
 
 .glightbox-container .gclose line,
 .glightbox-container .gclose path {
-    stroke: #00d2ff !important; /* Cyan 'X' icon */
+    stroke: #00d2ff !important; 
     stroke-width: 3px !important;
 }
 
@@ -916,15 +928,13 @@ footer span {
     stroke: #0d1117 !important;
 }
 
-/* Outer Section Styling */
 .connect-section {
     width: 100%;
     padding: 2rem 0;
     box-sizing: border-box;
 }
 
-/* Inner Main Card (Sumusunod sa width ng parent container) */
-/* Inner Main Card */
+
 .connect-card {
     background-color: #1a232a;
     border: 1px solid rgba(255, 255, 255, 0.08); 
@@ -937,7 +947,6 @@ footer span {
 
 
 
-/* Flexbox Grid Alignment para sa Buttons */
 .connect-grid {
     display: flex;
     flex-wrap: wrap;
@@ -945,7 +954,6 @@ footer span {
     gap: 0.9rem;
 }
 
-/* Compact Pill Button Style */
 .connect-box {
     display: inline-flex;
     align-items: center;
@@ -975,7 +983,6 @@ footer span {
     white-space: nowrap;
 }
 
-/* Hover at Highlight Effects */
 .connect-box:hover {
     transform: translateY(-2px);
     border-color: #00d2ff;
@@ -996,7 +1003,6 @@ footer span {
     background: #00b8e6;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 600px) {
     .connect-card {
         padding: 1.5rem 1rem;
@@ -1028,31 +1034,26 @@ footer span {
 
     
 }
-/* I-target ang lahat ng icons sa loob ng buttons para maging cyan */
 .connect-btn i,
 .connect-btn svg {
     color: #00d2ff; 
     font-size: 1.1rem; 
 }
 
-/* ==========================================================================
-   EDUCATION SECTION
-   ========================================================================== */
+
 .education-card {
     background-color: #1e293b;
     border: 1px solid #334155;
     border-radius: 10px;
     padding: 1.5rem 2rem;
     margin-bottom: 1.2rem;
-    /* Smooth Transition para sa Hover Effect */
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect kapag itinapat ang mouse cursor */
 .education-card:hover {
     transform: translateY(-4px); 
     border-color: #38bdf8;       
-    box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.2); /* Soft glow effect */
+    box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.2); 
 }
 
 .edu-header {
@@ -1082,37 +1083,29 @@ footer span {
     border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
-/* ==========================================================================
-   CUSTOM SCROLLBAR STYLING
-   ========================================================================== */
-/* Lapad ng Scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Background ng Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #12181f;
 }
 
-/* Mismong Scrollbar Thumb (Gagawing Cyan Accent) */
 ::-webkit-scrollbar-thumb {
     background: #00d2ff;
     border-radius: 5px;
 }
 
-/* Hover Effect kapag itinapat ang mouse */
 ::-webkit-scrollbar-thumb:hover {
     background: #00b8e6;
 }
 
-/* Firefox Support */
 * {
     scrollbar-width: thin;
     scrollbar-color: #00d2ff #12181f;
 }
 
-/* Video Projects Section */
 .projects-section {
     padding: 60px 20px;
     max-width: 1100px;
@@ -1125,14 +1118,12 @@ footer span {
     font-size: 0.95rem;
 }
 
-/* Grid Layout (2 columns sa desktop, 1 sa mobile) */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
 }
 
-/* Project Card */
 .project-card {
     background-color: #1a232a;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1147,11 +1138,10 @@ footer span {
     box-shadow: 0 10px 25px -5px rgba(0, 210, 255, 0.15);
 }
 
-/* Thumbnail Wrapper */
 .thumbnail-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9; /* Standard video ratio */
+    aspect-ratio: 16 / 9; 
     overflow: hidden;
     background-color: #0f172a;
 }
@@ -1164,10 +1154,9 @@ footer span {
 }
 
 .project-card:hover .thumbnail-wrapper img {
-    transform: scale(1.04); /* Subtle zoom effect on hover */
+    transform: scale(1.04); 
 }
 
-/* Text & Details inside Card */
 .project-info {
     padding: 20px;
 }
@@ -1185,7 +1174,6 @@ footer span {
     margin-bottom: 20px;
 }
 
-/* Watch Button */
 .btn-primary {
     display: inline-block;
     padding: 10px 20px;
@@ -1202,7 +1190,6 @@ footer span {
     background-color: #38bdf8;
     transform: translateY(-2px);
 }
-/* Skill / Tool Badges */
 .project-tags {
     display: flex;
     flex-wrap: wrap;

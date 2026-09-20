@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elmerto Gerong Osigan Jr. Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- GLightbox CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">EOJ</a>
@@ -30,13 +26,12 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <header class="hero">
         <div class="container hero-container">
-            <!-- Text Content -->
             <div class="hero-content">
 
                 <h1>Hi, I'm <span class="highlight">Elmerto Osigan Jr.</span></h1>
+                <h2 class="job-title">IT Specialist</h2>
                 <p>Passionate about technology, web solutions, hardware systems, and office support. Dedicated to delivering clean, efficient, and reliable digital workflows.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn-primary">View Projects</a>
@@ -44,24 +39,21 @@
                 </div>
             </div>
 
-            <!-- Profile Picture Section -->
             <div class="hero-image-wrapper">
                 <img src="images/profile.png" alt="Elmerto Gerong Osigan Jr." class="profile-img-fade">
             </div>
         </div>
     </header>
 
-    <!-- ABOUT SECTION -->
     <section id="about" class="section" data-aos="fade-up" data-aos-duration="800">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About</h2>
             <div class="about-card">
                 <p>I am a hardworking Bachelor of Science in Information Technology (BSIT) graduate from Saint Michael College of Caraga with practical OJT experience as an IT Support Intern at the Department of Migrant Workers (DMW) - Caraga. I specialize in technical support, document processing, digital record management, and web system development. A fast learner and reliable team player eager to apply core skills and contribute directly to operational success.</p>
             </div>
         </div>
     </section>
 
-  <!-- EXPERIENCE SECTION -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
@@ -85,12 +77,10 @@
         </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
     <section id="education" class="section" data-aos="fade-up" data-aos-duration="800">
         <div class="container">
             <h2 class="section-title">Education & Vocational</h2>
             
-            <!-- BSIT Degree -->
             <div class="education-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="edu-header">
                     <div>
@@ -101,7 +91,6 @@
                 </div>
             </div>
 
-            <!-- TESDA Certification -->
             <div class="education-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="edu-header">
                     <div>
@@ -115,7 +104,6 @@
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
     <section id="skills" class="section" data-aos="fade-up" data-aos-duration="800">
         <div class="container">
             <h2 class="section-title">Technical Skills & Tools</h2>
@@ -158,16 +146,13 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" class="section" data-aos="fade-up" data-aos-duration="800">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
 
-                <!-- Project Item 1 -->
-                <!-- Featured Project Card -->
+               
     <div class="project-card">
-        <!-- Main Image Thumbnail (Solo GLightbox Popup) -->
         <div class="project-img-wrapper">
             <a href="images/dmwss.png" class="glightbox project-img-link" data-glightbox="title: Document Tracking System - Login Interface">
                 <img src="images/dmwss.png" alt="Document Tracking System Preview" class="project-img">
@@ -177,7 +162,6 @@
             </a>
         </div>
 
-        <!-- Project Information -->
         <div class="project-info">
             <span class="project-tag">IT Support / OJT Project</span>
             <h3>Document Tracking System</h3>
@@ -193,7 +177,6 @@
             </div>
 
             <div class="project-links">
-                <!-- View Screenshot Button (Modal Grid Gallery Popup) -->
                 <a href="#dts-modal" class="btn-link modal-trigger">
                     <i class="fa-solid fa-image"></i> View Screenshot
                 </a>
@@ -201,17 +184,14 @@
         </div>
     </div>
 
-    <!-- MODAL GRID POPUP -->
     <div id="dts-modal" class="screenshot-modal">
         <div class="modal-overlay"></div>
         <div class="modal-content">
             <button class="modal-close">&times;</button>
             <h3 class="modal-title">Document Tracking System - System Preview</h3>
             
-            <!-- 4-Column Grid na may Hover Overlay at Direct GLightbox Links -->
             <div class="screenshot-grid">
 
-                <!-- Screenshot 0 -->
                 <div class="screenshot-item">
                     <a href="images/dmwss.png" class="glightbox" data-gallery="dts-popup-gallery" data-glightbox="title: Login Page">
                         <img src="images/dmwss.png" alt="Login Page">
@@ -222,7 +202,6 @@
                     <p>Login Page</p>
                 </div>
                 
-                <!-- Screenshot 1 -->
                 <div class="screenshot-item">
                     <a href="images/ss1.png" class="glightbox" data-gallery="dts-popup-gallery" data-glightbox="title: Dashboard">
                         <img src="images/ss1.png" alt="Dashboard">
@@ -233,7 +212,6 @@
                     <p>Dashboard</p>
                 </div>
 
-                <!-- Screenshot 2 -->
                 <div class="screenshot-item">
                     <a href="images/ss2.png" class="glightbox" data-gallery="dts-popup-gallery" data-glightbox="title: Incoming Documents (Internal)">
                         <img src="images/ss2.png" alt="Incoming Documents (Internal)">
@@ -244,7 +222,6 @@
                     <p>Incoming Documents (Internal)</p>
                 </div>
 
-                <!-- Screenshot 3 -->
                 <div class="screenshot-item">
                     <a href="images/ss3.png" class="glightbox" data-gallery="dts-popup-gallery" data-glightbox="title: Incoming Documents (External)">
                         <img src="images/ss3.png" alt="Incoming Documents (External)">
@@ -255,7 +232,6 @@
                     <p>Incoming Documents (External)</p>
                 </div>
 
-                <!-- Screenshot 4 -->
                 <div class="screenshot-item">
                     <a href="images/ss4.png" class="glightbox" data-gallery="dts-popup-gallery" data-glightbox="title: Outgoing Documents (Internal)">
                         <img src="images/ss4.png" alt="Outgoing Documents (Internal)">
@@ -273,13 +249,12 @@
             </div>
         </div>
     </section>
-
+    <!--
     <section id="video-projects" class="projects-section">
         <h2>Video Editing & Motion Projects</h2>
         <p class="section-subtitle">Sample edits and practice projects completed via CineStudy courses.</p>
 
         <div class="projects-grid">
-            <!-- Card 1 -->
             <div class="project-card">
                 <div class="thumbnail-wrapper">
                     <img src="images/thumbnail1.avif" alt="CineStudy Video Edit">
@@ -297,7 +272,6 @@
                 </div>
             </div>
 
-            <!-- Card 2 -->
             <div class="project-card">
                 <div class="thumbnail-wrapper">
                     <img src="images/thumbnail2.avif" alt="CineStudy Video Edit">
@@ -317,15 +291,14 @@
 
         </div>
     </section>
+    -->
 
-    <!-- CERTIFICATIONS & SEMINARS SECTION -->
     <section id="certifications" class="section">
         <div class="container">
             <h2 class="section-title">Certifications & Seminars</h2>
             
             <div class="cert-grid">
                 
-                <!-- 1. Cyber Hygiene Seminar -->
                 <div class="cert-card" data-aos="fade-up">
                     <div class="cert-media">
                         <a href="images/Certificate_CyberHygiene_Seminar_2026.jpg" class="glightbox" data-gallery="certifications">
@@ -342,7 +315,6 @@
                     </div>
                 </div>
 
-                <!-- 2. Angular Certificate -->
                 <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="cert-media">
                         <a href="images/Certificate_Angular_Sololearn_2024png.png" class="glightbox" data-gallery="certifications">
@@ -359,7 +331,6 @@
                     </div>
                 </div>
 
-                <!-- 3. Java Certificate -->
                 <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="cert-media">
                         <a href="images/Certificate_Java_Sololearn_2023.png" class="glightbox" data-gallery="certifications">
@@ -376,7 +347,6 @@
                     </div>
                 </div>
 
-                <!-- 4. TESDA NC II -->
                 <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="cert-media">
                         <a href="images/Certificate_TESDA_AutomotiveServicing_NCII_2022.jpg" class="glightbox" data-gallery="certifications">
@@ -397,7 +367,6 @@
         </div>
     </section>
 
-   <!-- CONTACT SECTION -->
     <section class="connect-section section" id="contact">
         <div class="container"> 
             <h2 class="section-title">Socials & Contact</h2>
@@ -433,25 +402,20 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Elmerto Gerong Osigan Jr. All rights reserved. | Nasipit, Agusan del Norte</p>
         </div>
     </footer>
 
-   <!-- External Libraries (kailangan para sa animation at lightbox) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
-    <!-- Iisang Custom Script Tag para sa Lahat ng Logic -->
     <script>
-        // 1. Force Scroll to Top on Refresh
         if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
         window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
         window.onload = () => setTimeout(() => window.scrollTo(0, 0), 10);
 
-        // 2. Initialize AOS & GLightbox
         AOS.init({ 
             once: false,       
             mirror: true,      
@@ -460,7 +424,6 @@
         });
         const lightbox = GLightbox({ selector: '.glightbox' });
 
-        // 3. Modal Open / Close Logic
         document.querySelectorAll('.modal-trigger').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
