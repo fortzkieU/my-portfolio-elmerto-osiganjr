@@ -167,7 +167,7 @@ body {
 }
 .job-title {
     font-size: 1.5rem;
-    color: #00d2ff; /* Kumuha ng accent color gaya ng neon blue */
+    color: #00d2ff; 
     font-weight: 600;
     margin-top: -10px;
     margin-bottom: 15px;
@@ -562,7 +562,6 @@ footer span {
 }
 
 
-/* --- Hamburger Default Style (Desktop: Hidden) --- */
 .hamburger {
     display: none;
     background: transparent;
@@ -574,15 +573,18 @@ footer span {
 }
 
 
-/* ==========================================
-   Responsive Styles for Mobile & Tablets
-   ========================================== */
+
 @media (max-width: 768px) {
     .container {
         padding: 0 1.2rem;
     }
-
-    /* --- Mobile Navbar & Hamburger Menu Adjustment --- */
+    .edu-date {
+        text-align: left !important;
+        display: block !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+    
     .nav-container {
         position: relative;
         display: flex;
@@ -593,7 +595,7 @@ footer span {
     }
 
     .hamburger {
-        display: block; /* Lalabas ang button sa mobile */
+        display: block; 
     }
 
     .nav-links {
@@ -608,12 +610,11 @@ footer span {
         gap: 1.2rem;
         padding: 1.5rem 0;
         
-        /* Itatago muna ang menu */
+        
         display: none;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     }
 
-    /* Kakabit ito kapag na-click ang hamburger button */
     .nav-links.active {
         display: flex;
     }
@@ -622,7 +623,6 @@ footer span {
         font-size: 1rem;
     }
 
-    /* --- Hero Section Adjustment --- */
     .hero {
         padding: 2rem 0;
         min-height: auto;
@@ -656,7 +656,6 @@ footer span {
         margin: 0 auto;
     }
 
-    /* --- Profile Image Responsiveness --- */
     .hero-image-wrapper {
         width: 100%;
         max-width: 240px;
@@ -667,7 +666,6 @@ footer span {
         max-width: 100%;
     }
 
-    /* --- Section Headings & Cards --- */
     .section-title {
         font-size: 1.6rem;
     }
