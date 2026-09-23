@@ -685,6 +685,18 @@ footer span {
         flex-direction: column;
     }
 }
+@media (max-width: 480px) {
+    .hero-buttons {
+        display: flex;
+        gap: 10px; /* Bawasan ang espasyo sa pagitan */
+    }
+    .hero-buttons a {
+        padding: 10px 15px; /* Paliitin ang padding sa loob ng button */
+        font-size: 0.9rem;  /* Paliitin nang kaunti ang text */
+        flex: 1;            /* Para maghati sila nang pantay sa screen */
+        text-align: center;
+    }
+}
 
 @media (max-width: 600px) {
     .nav-container {
